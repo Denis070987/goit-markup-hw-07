@@ -290,7 +290,7 @@ img {
 .doing {
   padding-top: 94px;
 }
-.doing-title {
+.doing__main-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -299,14 +299,14 @@ img {
   color: #212121;
   margin-bottom: 50px;
 }
-.doing-list {
+.doing__list {
   display: flex;
   gap: 30px;
 }
-.doing-item {
+.doing__item {
   position: relative;
 }
-.item-title {
+.doing__title {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -321,6 +321,8 @@ img {
   padding-bottom: 27px;
   bottom: 0px;
 }
+
+
 
 /*team section*/
 .team {
