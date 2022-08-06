@@ -328,8 +328,9 @@ img {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
-.section-title {
+.team__main-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -338,7 +339,16 @@ img {
   text-align: center;
   color: #212121;
 }
-.team-wrapper {
+.team__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.team__item {
+  background-color: #ffffff;
+  flex-basis: calc((100% - 30px * 3) / 4);
+}
+.team__wrapper {
   border: 1px solid transparent;
   border-top: none;
   padding-top: 30px;
@@ -349,7 +359,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
+.team__title {
   margin-bottom: 8px;
   font-weight: 500;
   line-height: calc(19 / 16);
@@ -357,34 +367,24 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.team-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-.team-text {
+.team__text {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 16px;
 }
-.team-item {
-  background-color: #ffffff;
-  flex-basis: calc((100% - 30px * 3) / 4);
-}
-.team {
-  background-color: #f5f4fa;
-}
+
+
 
 /*Socials icons*/
-.socials-list {
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.socials-link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,11 +395,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-icon {
-  fill: currentColor;
-}
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -501,6 +498,8 @@ img {
   margin-left: 65px;
 }
 .foot-list {
+  align-items: center;
+    justify-content: center;
   gap: 10px;
   display: flex;
 }
