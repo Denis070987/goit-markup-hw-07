@@ -10,12 +10,12 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms ease-in-out 40ms, visibility 250ms ease-in-out 40ms;
+}
 
-    &.is--hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    }
 }
 
 .modal {
@@ -30,11 +30,11 @@
     opacity: 1;
     transition: transform 250ms ease-in-out 40ms, opacity 250ms ease-in-out 40ms;
     padding: 40px;
+}   
 
-    .backdrop.is--hidden & {
+.backdrop.is-hidden .modal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
-    }
 }
 
 .modal__btn {
