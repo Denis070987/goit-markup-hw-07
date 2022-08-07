@@ -9,6 +9,19 @@
 
 // components styles
 @import './components/buttons';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/socials';
+@import './components/footer';
+@import './components/footer-form';
+@import './components/modal-window';
+@import './components/modal-form';
 
 // layout styles
-@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/doing';
+@import './layout/team';
+@import './layout/regular';
+@import './layout/portfolio';

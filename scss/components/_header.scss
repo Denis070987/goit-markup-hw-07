@@ -23,12 +23,11 @@
 }
 .header__address {
     display: block;
-}
 
-.header__address:focus .header__icon,
-.header__address:hover .header__icon {
+    &:focus .header__icon,
+    &:hover .header__icon {
     color: #2196f3;
-    fill: #2196f3;
+    fill: #2196f3; }
 }
 
 .header__address {
