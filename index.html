@@ -607,78 +607,76 @@
       </div>
     </footer>
     <!--modal window-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-btn-icon" width="18px" height="18px">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__btn-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
-        <form class="register-form">
-          <strong class="register-form-title" lang="uk">
+        <form class="register register-form">
+          <strong class="register__title" lang="uk">
             Залиште свої дані, ми вам передзвонимо
           </strong>
-          <div class="register-form-group" role="group">
-            <label class="register-form-wrap">
-              <span class="register-form-label" lang="uk">Ім'я</span>
-              <input
-                class="register-form-input"
-                type="text"
-                name="name"
-                minlength="3"
-                required
-              /><svg class="register-form-icon" width="18px" height="18px">
+          <div class="register__group" role="group">
+            <label class="register__wrap">
+              <span class="register__label" lang="uk">Ім'я</span>
+              <input class="register__input" type="text" name="name" minlength="3" required /><svg
+                class="register__icon"
+                width="18px"
+                height="18px"
+              >
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label" lang="uk">Телефон</span>
+            <label class="register__wrap">
+              <span class="register__label" lang="uk">Телефон</span>
               <input
-                class="register-form-input"
+                class="register__input"
                 type="tel"
                 name="tel"
                 required
                 maxlength="13"
                 minlength="13"
               />
-              <svg class="register-form-icon" width="18px" height="18px">
+              <svg class="register__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label" lang="uk">Пошта</span>
-              <input class="register-form-input" type="email" name="email" required />
-              <svg class="register-form-icon" width="18px" height="18px">
+            <label class="register__wrap">
+              <span class="register__label" lang="uk">Пошта</span>
+              <input class="register__input" type="email" name="email" required />
+              <svg class="register__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </label>
-            <label class="register-form-wrap">
-              <span class="register-form-label" lang="uk">Коментар</span>
+            <label class="register__wrap">
+              <span class="register__label" lang="uk">Коментар</span>
               <textarea
-                class="register-form-message"
+                class="register__message"
                 placeholder="Введіть текст"
                 name="message"
                 rows="5"
               ></textarea>
             </label>
           </div>
-          <label class="register-form-agreement">
+          <label class="register__agreement agreement-register">
             <input
-              class="register-checkbox visually-hidden"
+              class="agreement-register__checkbox visually-hidden"
               type="checkbox"
               name="agreement"
               required
             />
-            <svg class="register-icon" width="16px" height="15px">
-              <use class="register-icon-uncheck" href="./images/icons.svg#icon-Vector"></use>
-              <use class="register-icon-check" href="./images/icons.svg#icon-check"></use>
+            <svg class="agreement-register__icon agreement-icon" width="16px" height="15px">
+              <use class="agreement-icon__uncheck" href="./images/icons.svg#icon-Vector"></use>
+              <use class="agreement-icon__check" href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span class="register-form-agreement-text">
+            <span class="agreement-register__text">
               Погоджуюся з розсилкою та приймаю
-              <a class="register-form-agreement-link" href="">Умови договору</a>
+              <a class="agreement-register__link" href="">Умови договору</a>
             </span>
           </label>
-          <button class="register-form-btn" type="submit">Відправити</button>
+          <button class="register__btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
